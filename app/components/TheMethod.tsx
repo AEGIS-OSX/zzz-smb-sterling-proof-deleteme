@@ -74,7 +74,7 @@ export default function TheMethod() {
               <h3 className="font-[family-name:var(--font-display)] text-[length:var(--text-h3)] font-[500] text-[var(--color-text-primary)] mb-[var(--space-sm)]">
                 {feature.title}
               </h3>
-              <p className="font-[family-name:var(--font-body)] text-[length:var(--text-body-large)] text-[var(--color-text-secondary)] leading-[1.6] max-w-[48ch]">
+              <p className="font-[family-name:var(--font-body)] text-[length:var(--text-body-lg)] text-[var(--color-text-secondary)] leading-[1.6] max-w-[48ch]">
                 {feature.body}
               </p>
             </motion.div>
