@@ -61,4 +61,12 @@
   .navLinks {
     display: none;
   }
+
+  .navCta {
+    display: none;
+  }
+
+  .navInner {
+    padding-inline: var(--space-md);
+  }
 }

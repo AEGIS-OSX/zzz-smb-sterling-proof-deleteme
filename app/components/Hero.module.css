@@ -24,6 +24,8 @@
   flex-direction: column;
   align-items: flex-start;
   order: 2;
+  width: 100%;
+  min-width: 0;
 }
 
 .heroImageCol {
@@ -65,7 +67,9 @@
   letter-spacing: -0.02em;
   color: var(--color-canvas);
   overflow-wrap: anywhere;
+  word-break: break-word;
   min-width: 0;
+  max-width: 100%;
   margin-bottom: var(--space-md);
 }
 
@@ -108,7 +112,16 @@
     padding-block-start: var(--space-4xl);
     padding-block-end: var(--space-5xl);
   }
-  
+
+  .container {
+    overflow: hidden;
+    max-width: 100%;
+  }
+
+  .headline {
+    font-size: clamp(1.75rem, 7vw, 2.25rem);
+  }
+
   .heroImageCol {
     height: 280px;
   }
