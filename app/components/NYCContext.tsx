@@ -7,7 +7,7 @@ export default function NYCContext() {
       <div className="section-container">
         <div className="grid grid-cols-1 md:grid-cols-[45%_55%] gap-[var(--space-3xl)] items-center">
           <div>
-            <ProjectImage id="nyc-context" className={styles.nycImage} />
+            <ProjectImage id="feature_2" className={styles.nycImage} />
           </div>
           <div className="flex flex-col gap-[var(--space-md)]">
             <span className="font-[family-name:var(--font-body)] text-[var(--text-label)] font-medium tracking-[0.08em] uppercase text-[var(--color-accent-primary)]">
