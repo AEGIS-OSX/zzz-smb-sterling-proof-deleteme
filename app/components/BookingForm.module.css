@@ -1,0 +1,15 @@
+/* BookingForm.module.css */
+/* Layout constraints are handled via Tailwind in the component, 
+   but this file is provided as per the task requirement for potential 
+   component-specific overrides. */
+
+.container {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  background-color: var(--color-canvas);
+  padding-block: var(--space-5xl);
+}
