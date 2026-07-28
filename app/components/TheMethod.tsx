@@ -18,10 +18,10 @@ export default function TheMethod() {
           <span className="block font-[family-name:var(--font-body)] text-[var(--text-label)] font-medium uppercase tracking-[0.08em] text-[var(--color-accent-primary)] mb-[var(--space-sm)]">
             The Method
           </span>
-          <h2 className="font-[family-name:var(--font-display)] text-[var(--text-h1)] font-medium leading-[1.15] tracking-[-0.01em] text-[var(--color-text-primary)] mb-[var(--space-md)] overflow-wrap-anywhere min-w-0">
+          <h2 className="font-[family-name:var(--font-display)] text-[var(--text-h1)] font-medium leading-[1.15] tracking-[-0.01em] text-[var(--color-text-primary)] mb-[var(--space-md)] [overflow-wrap:anywhere] min-w-0">
             The result, not the effort.
           </h2>
-          <p className="font-[family-name:var(--font-body)] text-[var(--text-body-large)] leading-[1.6] text-[var(--color-text-secondary)]">
+          <p className="font-[family-name:var(--font-body)] text-[var(--text-body-lg)] leading-[1.6] text-[var(--color-text-secondary)]">
             We approach residential cleaning with the discipline of a boutique hotel. No rushed schedules. No generic checklists. Our team focuses on the tactile details that signal a truly clean space: the crisp fold of a towel, the clarity of a window, the quiet of a room restored to order.
           </p>
         </header>
@@ -41,7 +41,7 @@ export default function TheMethod() {
                 Meticulous Standards
               </h3>
               <p className="font-[family-name:var(--font-body)] text-[var(--text-body)] leading-[1.6] text-[var(--color-text-secondary)]">
-                We don`t just clean surfaces. We restore them. From deep-set hardwood grain to polished fixtures, we use professional-grade methods that respect your home`s materials.
+                We don't just clean surfaces. We restore them. From deep-set hardwood grain to polished fixtures, we use professional-grade methods that respect your home's materials.
               </p>
             </div>
             <div className="order-1 md:order-2">
@@ -71,7 +71,7 @@ export default function TheMethod() {
                 Unhurried Service
               </h3>
               <p className="font-[family-name:var(--font-body)] text-[var(--text-body)] leading-[1.6] text-[var(--color-text-secondary)]">
-                Quality takes time. We don`t overbook our staff, ensuring every apartment receives the focus it requires to meet our internal benchmark.
+                Quality takes time. We don't overbook our staff, ensuring every apartment receives the focus it requires to meet our internal benchmark.
               </p>
             </div>
           </motion.div>
