@@ -33,7 +33,7 @@ export default function Hero(): JSX.Element {
           </motion.h1>
 
           <motion.p
-            className="font-[family-name:var(--font-body)] text-[var(--text-body-lg)] leading-[1.6] text-[var(--color-text-on-dark)] max-w-[52ch]"
+            className="font-[family-name:var(--font-body)] text-[var(--text-body-lg)] leading-[1.6] text-[var(--color-surface)] max-w-[52ch]"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
