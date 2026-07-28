@@ -5,26 +5,75 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: #1C1C1A;
-  --color-accent: #2E6B5E;
-  --color-bg: #1C1C1A;
-  --color-text: #1C1C1A;
-  --color-muted: #6B6864;
+  /* Color */
+  --color-canvas: #F7F5F2;
+  --color-surface: #FFFFFF;
+  --color-anchor: #1C1C1A;
+  --color-text-primary: #1C1C1A;
+  --color-text-secondary: #3D3B38;
+  --color-text-muted: #6B6864;
+  --color-accent-primary: #2E6B5E;
+  --color-accent-primary-hover: #24544A;
+  --color-accent-secondary: #C4A882;
+  --color-semantic-success: #3A7D5C;
+  --color-semantic-error: #9E443A;
+  --color-semantic-warning: #B58D42;
   --color-border: #E2E0DD;
-  --space-base: 8px;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
-  --font-display: 'JetBrains Mono', Georgia, serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Typography */
+  --font-display: "Tiempos Headline", "Instrument Serif", Georgia, serif;
+  --font-body: "Söhne", "Geist Sans", system-ui, sans-serif;
+  --font-mono: "Berkeley Mono", "JetBrains Mono", monospace;
+
+  /* Type scale */
+  --text-display: 52px;
+  --text-h1: 40px;
+  --text-h2: 32px;
+  --text-h3: 22px;
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-label: 14px;
+  --text-mono-callout: 20px;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+
+  /* Component tokens */
+  --radius-card: 4px;
+  --radius-badge: 2px;
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.08);
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Focus */
+  --color-focus: #2E6B5E;
 }
 
 html, body {
-  background: var(--color-bg);
-  color: var(--color-text);
+  overflow-x: clip;
+  background-color: var(--color-canvas);
+  color: var(--color-text-primary);
   font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display);
+*:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 1px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: 2px solid transparent;
 }
