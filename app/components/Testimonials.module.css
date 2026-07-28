@@ -1,0 +1,107 @@
+/* Testimonials.module.css */
+/* Stillwater Cleaning NYC — dark testimonial section with staggered pull-quotes */
+
+.section {
+  background-color: var(--color-text-primary);
+  padding-block: var(--space-5xl);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-block: var(--space-5xl);
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: var(--space-lg);
+  }
+}
+
+.heading {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-secondary);
+  margin-bottom: var(--space-3xl);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    margin-bottom: var(--space-2xl);
+  }
+}
+
+.quoteCard {
+  margin-bottom: var(--space-4xl);
+}
+
+.quoteCard:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .quoteCard {
+    margin-bottom: var(--space-3xl);
+  }
+}
+
+.quoteMark {
+  font-family: var(--font-display);
+  font-size: 80px;
+  line-height: 0.8;
+  color: var(--color-accent-secondary);
+  display: block;
+}
+
+.quoteText {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-canvas);
+  line-height: 1.4;
+  margin-top: var(--space-sm);
+}
+
+.attribution {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-secondary);
+  margin-top: var(--space-md);
+}
+
+/* Default mobile: all left-aligned, full width */
+.alignLeft,
+.offsetRight,
+.indentLeft {
+  max-width: 100%;
+}
+
+/* Tablet+ staggered layout */
+@media (min-width: 768px) {
+  .alignLeft {
+    max-width: 56ch;
+  }
+
+  .offsetRight {
+    margin-left: auto;
+    max-width: 56ch;
+  }
+
+  .indentLeft {
+    margin-left: var(--space-5xl);
+    max-width: 56ch;
+  }
+}
