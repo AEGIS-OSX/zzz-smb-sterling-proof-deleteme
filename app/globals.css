@@ -12,6 +12,7 @@
   --color-text-primary: #1C1C1A;
   --color-text-secondary: #3D3B38;
   --color-text-muted: #6B6864;
+  --color-text-on-dark: #A8A5A1;
   --color-accent-primary: #2E6B5E;
   --color-accent-primary-hover: #24544A;
   --color-accent-secondary: #C4A882;
@@ -76,4 +77,14 @@ html, body {
 
 *:focus:not(:focus-visible) {
   outline: 2px solid transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
