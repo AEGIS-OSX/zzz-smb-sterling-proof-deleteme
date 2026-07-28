@@ -1,4 +1,4 @@
-import ProjectImage from "./ProjectImage";
+import { ProjectImage } from "./ProjectImage";
 import styles from "./NYCContext.module.css";
 
 export default function NYCContext() {
