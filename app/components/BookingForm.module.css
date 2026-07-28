@@ -1,7 +1,4 @@
-.section {
-  background-color: var(--color-canvas);
-  padding: var(--space-5xl) var(--space-md);
-}
+/* BookingForm.module.css */
 
 .container {
   max-width: 640px;
@@ -9,38 +6,13 @@
   margin-right: auto;
 }
 
-.heading {
-  font-family: var(--font-display);
-  font-size: var(--text-h2-size);
-  font-weight: 500;
-  line-height: var(--text-h2-line-height);
-  color: var(--color-text-primary);
-  margin-bottom: var(--space-xl);
-  text-align: left;
+.section {
+  background-color: var(--color-canvas);
+  padding-block: var(--space-5xl);
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-lg);
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
-}
-
-.submitWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-  margin-top: var(--space-md);
-}
-
-.successMessage {
-  color: var(--color-semantic-success);
-  font-family: var(--font-body);
-  font-size: var(--text-body-large-size);
-  line-height: var(--text-body-large-line-height);
+.textarea {
+  height: auto;
+  min-height: 120px;
+  resize: vertical;
 }
