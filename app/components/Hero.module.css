@@ -1,1 +1,115 @@
-/* Hero component styles */
+.heroSection {
+  --color-canvas-muted: rgba(247, 245, 242, 0.65);
+  background-color: var(--color-text-primary);
+  padding-block-start: var(--space-5xl);
+  padding-block-end: 180px;
+  color: var(--color-canvas);
+}
+
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  order: 2;
+}
+
+.heroImageCol {
+  overflow: hidden;
+  height: 100%;
+  min-height: 280px;
+  order: 1;
+}
+
+.imageWrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+  display: block;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-canvas);
+  overflow-wrap: anywhere;
+  min-width: 0;
+  margin-bottom: var(--space-md);
+}
+
+.subheadline {
+  font-family: var(--font-body);
+  font-size: var(--text-body-lg);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-canvas-muted);
+  max-width: 52ch;
+  margin-bottom: var(--space-xl);
+}
+
+@media (min-width: 769px) {
+  .heroSection {
+    padding-block-start: var(--space-5xl);
+    padding-block-end: 180px;
+  }
+
+  .grid {
+    grid-template-columns: 58% 42%;
+  }
+
+  .heroContent {
+    order: 1;
+  }
+
+  .heroImageCol {
+    order: 2;
+    min-height: 480px;
+  }
+
+  .headline {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding-block-start: var(--space-4xl);
+    padding-block-end: var(--space-5xl);
+  }
+  
+  .heroImageCol {
+    height: 280px;
+  }
+}
