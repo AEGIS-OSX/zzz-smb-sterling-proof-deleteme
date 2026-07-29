@@ -12,18 +12,18 @@ export default function Nav() {
           Stillwater
         </a>
         <div className={styles.navLinks}>
-          <a href="#the-method" className={styles.navLink}>
-            The Method
+          <a href="#brewing-story" className={styles.navLink}>
+            Our Brew
           </a>
-          <a href="#service-details" className={styles.navLink}>
-            Service Details
+          <a href="#flavor-notes" className={styles.navLink}>
+            Flavors
           </a>
-          <a href="#book" className={styles.navLink}>
-            Book Now
+          <a href="#stockists" className={styles.navLink}>
+            Find Us
           </a>
         </div>
-        <a href="#book" className={`btn-primary ${styles.navCta}`}>
-          Book a Service
+        <a href="#order" className={`btn-primary ${styles.navCta}`}>
+          Order Now
         </a>
       </div>
     </nav>

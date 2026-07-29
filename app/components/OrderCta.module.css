@@ -1,0 +1,70 @@
+.root {
+  padding-block: var(--space-5xl);
+  background-color: var(--color-anchor);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: 640px;
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-surface);
+  line-height: 1.1;
+}
+
+.body {
+  font-size: var(--text-body-lg);
+  color: var(--color-text-on-dark);
+  line-height: 1.6;
+  max-width: 52ch;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.cta {
+  /* inherits .btn-primary */
+}
+
+.subtext {
+  font-size: var(--text-label);
+  color: var(--color-text-on-dark);
+}
+
+.email {
+  color: var(--color-accent-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: color 0.15s var(--ease-out);
+}
+
+.email:hover {
+  color: var(--color-surface);
+}
+
+.email:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
