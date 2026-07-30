@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'zzz-smb-sterling-proof-deleteme',
-  description: 'AEGIS-generated project',
+  title: 'Stillwater Cold Brew',
+  description: 'Professional cold brew for the five boroughs.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
