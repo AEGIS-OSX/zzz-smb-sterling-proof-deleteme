@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ProjectImage } from "@/app/components/ProjectImage";
-import styles from "./Hero.module.css";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -19,60 +18,60 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.container}>
-        <div className={styles.grid}>
-          <div className={styles.heroImageCol}>
-            <motion.div
-              initial={{ opacity: 0, scale: 1.04 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
-              className={styles.imageWrapper}
-            >
-              <ProjectImage id="hero" className={styles.heroImage} />
-            </motion.div>
-          </div>
-
-          <div className={styles.heroContent}>
+    <section className="bg-[var(--color-text-primary)] pt-[var(--space-4xl)] md:pt-[var(--space-5xl)] pb-[var(--space-5xl)]">
+      <div className="max-w-[1280px] mx-auto px-[var(--space-md)]">
+        <div className="grid grid-cols-1 md:grid-cols-[58%_42%] gap-[var(--space-3xl)] items-center">
+          <div className="flex flex-col items-start order-2 md:order-1">
             <motion.p
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0}
-              className={styles.eyebrow}
+              className="font-[family-name:var(--font-body)] text-[var(--text-label)] font-medium tracking-[0.08em] uppercase text-[var(--color-accent-secondary)] mb-[var(--space-md)]"
             >
-              Boutique Housekeeping · NYC
+              Small-batch cold brew
             </motion.p>
-            
+
             <motion.h1
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0.1}
-              className={styles.headline}
+              className="font-[family-name:var(--font-display)] text-[36px] md:text-[52px] font-medium leading-[1.1] tracking-[-0.02em] text-[var(--color-canvas)] break-words min-w-0 mb-[var(--space-md)]"
             >
-              A boutique housekeeping standard for the five boroughs.
+              Stillwater. Brewed slow, served calm.
             </motion.h1>
-            
+
             <motion.p
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0.2}
-              className={styles.subheadline}
+              className="font-[family-name:var(--font-body)] text-[var(--text-body-lg)] font-normal leading-[1.6] text-[var(--color-canvas-muted)] max-w-[52ch] mb-[var(--space-xl)]"
             >
-              Professional residential cleaning starting at $140. We handle the turnover so you can return to a calm, unhurried home.
+              A small-batch cold brew for mornings that deserve better than a rush.
             </motion.p>
-            
+
             <motion.div
               variants={fadeUp}
               initial="hidden"
               animate="visible"
               custom={0.3}
             >
-              <a href="#book" className="btn-primary hero-cta">
-                Book a Service
+              <a href="#order" className="btn-primary">
+                Order Now
               </a>
+            </motion.div>
+          </div>
+
+          <div className="overflow-hidden h-[280px] md:h-auto md:min-h-[480px] order-1 md:order-2">
+            <motion.div
+              initial={{ opacity: 0, scale: 1.04 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+              className="h-full w-full"
+            >
+              <ProjectImage id="hero" className="w-full h-full object-cover object-center block" />
             </motion.div>
           </div>
         </div>
